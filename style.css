@@ -1,0 +1,209 @@
+/* Fuente e importación */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+
+:root {
+  --bg: #17130d;
+  --card: #002e3a;
+  --text: #e9f5d0;
+  --muted: #a6adbb;
+  --accent: #3aee22;
+  --accent-2: #a78bfa;
+  --radius: 18px;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--text);
+  
+}
+
+/* Header */
+.site-header {
+  text-align: center;
+  padding: 32px 16px;
+}
+.site-header h1 {
+  font-weight: 800;
+  font-size: 2rem;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.subtitle {
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+/* Layout principal */
+.main-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  align-items: start;
+}
+
+/* Descripción de avances */
+.description {
+  background: rgba(50, 138, 10, 0.384);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.description h2 {
+  margin-bottom: 12px;
+  color: var(--accent);
+}
+.description article {
+  margin-bottom: 18px;
+}
+.description h3 {
+  margin-bottom: 6px;
+  color: var(--accent-2);
+}
+
+/* Slider pequeño */
+.slider-section {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  padding: 12px;
+  box-shadow: var(--shadow);
+}
+
+/* Ocultar radios */
+input[type="radio"][name="slide"] {
+  position: absolute;
+  left: -9999px;
+}
+
+/* Slides */
+.slides {
+  list-style: none;
+  position: relative;
+  height: 300px; /* Slider pequeño */
+  margin: 0;
+  padding: 0;
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  padding: 12px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 1.2rem;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Imágenes de los slides */
+.slides li:nth-child(1) {
+  background-image: url("img/1.jpg");
+}
+.slides li:nth-child(2) {
+  background-image: url("img/2.jpg");
+}
+.slides li:nth-child(3) {
+  background-image: url("img/3.jpg");
+}
+
+/* Mostrar slide activo */
+#slide1:checked ~ .slides li:nth-child(1),
+#slide2:checked ~ .slides li:nth-child(2),
+#slide3:checked ~ .slides li:nth-child(3) {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Tabs / Dots */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+.tab {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tab:hover {
+  background: var(--accent);
+  color: #000;
+}
+#slide1:checked ~ .tabs label[for="slide1"],
+#slide2:checked ~ .tabs label[for="slide2"],
+#slide3:checked ~ .tabs label[for="slide3"] {
+  background: var(--accent);
+  color: #000;
+}
+
+/* Flechas de navegación */
+.arrows .arrow {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  background: rgba(0,0,0,0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.4rem;
+  transition: background 0.3s ease;
+}
+.arrows .arrow:hover {
+  background: var(--accent);
+  color: #000;
+}
+.arrows .prev { left: -10px; }
+.arrows .next { right: -10px; }
+
+/* Mostrar flechas activas */
+#slide1:checked ~ .arrows .prev-1,
+#slide1:checked ~ .arrows .next-1 { display: grid; }
+#slide2:checked ~ .arrows .prev-2,
+#slide2:checked ~ .arrows .next-2 { display: grid; }
+#slide3:checked ~ .arrows .prev-3,
+#slide3:checked ~ .arrows .next-3 { display: grid; }
+.arrows .prev, .arrows .next { display: none; }
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 16px;
+  color: var(--muted);
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+  .slider-section {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
