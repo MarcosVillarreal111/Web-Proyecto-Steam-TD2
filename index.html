@@ -51,6 +51,12 @@
           Aunque tomó más tiempo de lo esperado, logramos obtener un buen estándar para el brazo robótico.
           Con la ayuda del profesor de STEAM y la información investigada en internet, el resultado fue satisfactorio.
         </p>
+
+        <h3>Nuevo diseno mejorado — 11/09/2025</h3>
+        <p>
+          En avanze se diseno un nuevo modelo de 3d para imprimir la idea es que sea totalmente funcional y se le puedan agregar los componentes servomotores, el motor paso a paso 
+          para luego agregar toda la parte del brazo que sigue y sus otros componentes, el giroscopio sigue siendo la parte mas dificil de maquetar en 3D pero se logro obtener un diseno mejor 
+        </p>
       </article>
 
       <article>
@@ -77,16 +83,24 @@
       <input type="radio" name="slide" id="slide1" checked>
       <input type="radio" name="slide" id="slide2">
       <input type="radio" name="slide" id="slide3">
+      <input type="radio" name="slide" id="slide4">
+      <input type="radio" name="slide" id="slide5">
 
       <ol class="slides">
         <li class="slide" data-slide="1">
-          <h2>Diseño 3D</h2>
+          <h2>Este fue el primer diseno no funcional</h2>
         </li>
         <li class="slide" data-slide="2">
-          <h2>Nuevas piezas del brazo</h2>
+          <h2>Punta de roceador</h2>
         </li>
         <li class="slide" data-slide="3">
-          <h2>Maquetado en cartón</h2>
+          <h2>Ideas del brazo en carton</h2>
+        </li>
+        <li class="slide" data-slide="4">
+          <h2>Nueva base con sistema de polea </h2>
+        </li>
+        <li class="slide" data-slide="5">
+          <h2>Primera impresion </h2>
         </li>
       </ol>
 
@@ -95,17 +109,34 @@
         <label for="slide1" class="tab">1</label>
         <label for="slide2" class="tab">2</label>
         <label for="slide3" class="tab">3</label>
+        <label for="slide4" class="tab">4</label>
+        <label for="slide5" class="tab">5</label>
       </nav>
 
       <!-- Flechas de navegación -->
       <div class="arrows">
-        <label for="slide3" class="arrow prev prev-1">‹</label>
-        <label for="slide2" class="arrow prev prev-3">‹</label>
-        <label for="slide1" class="arrow prev prev-2">‹</label>
+       <div class="arrows">
+  <!-- Slide 1 -->
+  <label for="slide5" class="arrow prev prev-1">‹</label>
+  <label for="slide2" class="arrow next next-1">›</label>
 
-        <label for="slide2" class="arrow next next-1">›</label>
-        <label for="slide3" class="arrow next next-2">›</label>
-        <label for="slide1" class="arrow next next-3">›</label>
+  <!-- Slide 2 -->
+  <label for="slide1" class="arrow prev prev-2">‹</label>
+  <label for="slide3" class="arrow next next-2">›</label>
+
+  <!-- Slide 3 -->
+  <label for="slide2" class="arrow prev prev-3">‹</label>
+  <label for="slide4" class="arrow next next-3">›</label>
+
+  <!-- Slide 4 -->
+  <label for="slide3" class="arrow prev prev-4">‹</label>
+  <label for="slide5" class="arrow next next-4">›</label>
+
+  <!-- Slide 5 -->
+  <label for="slide4" class="arrow prev prev-5">‹</label>
+  <label for="slide1" class="arrow next next-5">›</label>
+</div>
+
       </div>
     </section>
   </main>
