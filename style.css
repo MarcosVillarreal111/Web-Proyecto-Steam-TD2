@@ -3,13 +3,13 @@
 
 :root {
   --bg: #fdfdfd;
-  --card: #6a9153;
-  --text: #e9f5d0;
-  --muted: #002061;
-  --accent: #46c24d;
-  --accent-2: #769b11;
-  --radius: 18px;
-  --shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  --card: #53e400;
+  --text: #f8f9ff;
+  --muted: #e2e9f8;
+  --accent: #f3fff4;
+  --accent-2: #a0f000;
+  --radius: 68px;
+  --shadow: 0 8px 34px rgba(0, 0, 0, 0.3);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -17,6 +17,8 @@ body {
   font-family: "Inter", sans-serif;
   color: var(--text);
   background-color: var(--bg);
+  background-image: url(img/natu.jpg);
+  background-size:cover;
 }
 
 /* Header */
