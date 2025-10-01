@@ -125,7 +125,7 @@ input[type="radio"][name="slide"] {
   background-image: url("img/3.jpg");
 }
 .slides li:nth-child(4) {
-  background-image: url("");
+  background-image: url("img/4.jpg");
 }
 .slides li:nth-child(5) {
   background-image: url("");
@@ -227,3 +227,4 @@ input[type="radio"][name="slide"] {
     height: 300px;
   }
 }
+
