@@ -2,107 +2,106 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Avances de Desarrollo Ambiental</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyecto STEAM+ · Brazo Robótico</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Encabezado -->
   <header class="site-header">
     <h1>Proyecto STEAM+</h1>
     <p class="subtitle">
-      Informes del proyecto STEAM <br>
+      Informes del proyecto STEAM+<br>
       Estudiante: Marcos Villarreal<br>
       Grupo TD2 · Material de Informes
     </p>
   </header>
 
+  <!-- Contenido principal -->
   <main class="main-layout">
-    <!-- Columna izquierda: descripciones -->
+
+    <!-- Columna de descripción -->
     <section class="description">
-      <h2>Avances del Proyecto de Steam+ </h2>  
+      <h2>Avances del Proyecto</h2>
+
+      <!-- Avance 1 -->
+      <article>
+        <h3>Avance 1 — Diseño Inicial</h3>
+        <p>
+          En el primer informe, se diseñó un brazo robótico con un sistema de riego por goteo. Este incluye un sensor de humedad que activa el riego cuando la humedad baja al <strong>50%</strong>.
+        </p>
+      </article>
 
       <article>
-        <h3>Avance 1</h3>
+        <h3>Informe de Proceso — 20/08/2025</h3>
         <p>
-          En el primer informe de avance del proyecto, se logró diseñar, en conjunto con ideas ambientales,
-          la elaboración de un maquetado de brazo robótico, el cual tendrá como tarea mantener una planta en buen estado
-          mediante un sistema de riego por goteo. El detector de humedad permitirá saber si la planta carece de agua
-          cuando el nivel baje a un <strong>50%</strong>.
+          Se inició con un prototipo en cartón para visualizar la estructura del brazo. Fue un reto diseñar los ejes de rotación debido al poco conocimiento técnico. Sin embargo, se logró consolidar una idea funcional.
         </p>
+      </article>
 
-        <h3>Informe sobre el proceso — 20/08/2025</h3>
+      <article>
+        <h3>Búsqueda de Componentes — 21/08/2025</h3>
         <p>
-          Los primeros pasos para realizar este proyecto fueron pensar en algo útil para el desarrollo de plantas.
-          Primero hicimos un maquetado en cartón para visualizar cómo sería el proyecto.
-          Fue un reto diseñar el movimiento de rotación de los ejes en la base del brazo, ya que no contábamos con el conocimiento suficiente.
-          Aunque cometimos varios errores en el maquetado, logramos consolidar una idea sólida que pudimos presentar.
+          Se optó por una punta de rociador de rosca para intercambiarla fácilmente. Se adquirieron dos motores paso a paso para el proyecto.
         </p>
+      </article>
 
-        <h3>Búsqueda de componentes — 21/08/2025</h3>
-        <p>
-          La búsqueda de los componentes fue un verdadero reto.
-          La punta de dispersión del brazo debía ser intercambiable, por lo que decidimos que fuera de rosca para poder cambiarla fácilmente.
-          Ese mismo día conseguimos dos motores paso a paso para adaptarlos al proyecto.
-        </p>
-
+      <article>
         <h3>Diseño 3D — 28/08/2025</h3>
         <p>
-          El diseño 3D fue un proceso de aprendizaje, ya que los programas de modelado virtual son muy complejos de usar.
-          Aunque tomó más tiempo de lo esperado, logramos obtener un buen estándar para el brazo robótico.
-          Con la ayuda del profesor de STEAM y la información investigada en internet, el resultado fue satisfactorio.
+          El modelado 3D se realizó con asistencia docente y recursos en línea. Fue desafiante por la complejidad de los programas, pero se logró un buen resultado.
         </p>
-
-        <h3>Nuevo diseño mejorado — 17/09/2025</h3>
-        <p>
-          Bueno el dia de hoy modifique todo el diseño porque habia que ajustar las entradas de los servo motores y el motor paso a paso tenia que tener las medidas exactas han sido largas horas de trabajo porque
-          es todo un reto analizar cada pieza y su funcionamiento el entorno del brazo tiene que ser seguro por el tema del agua y los componentes tienen que estar dentro de un espacio protegido.
-        </p>
-        
-        <h3>Avanze numero 2 — 01/10/2025</h3>
-        <p>
-         Hoy en la utu probramos la forma de programar los servomotores con arduino IDE el programa basicamente el codigo funciono instalando las librerias de servo.h 
-         los pasos para conectar el servo motor fueron  GND (tierra) alimentacion 5V si el servo motor necesita mas potencia seria con una protoboard, Pin digital cable amarillo seria la señal PWM  pin digital 
-         Muestro imagen de ejemplo 
       </article>
 
       <article>
-        <h3>Listado de Materiales</h3>
+        <h3>Mejoras al Diseño — 17/09/2025</h3>
+        <p>
+          Se rediseñó el brazo para ajustar entradas de motores. Se adaptaron medidas y se consideró la protección contra agua para los componentes electrónicos.
+        </p>
+      </article>
+
+      <article>
+        <h3>Avance 2 — 01/10/2025</h3>
+        <p>
+          Se realizaron pruebas con servomotores usando Arduino IDE. El servo se conectó con GND, alimentación de 5V y señal PWM desde un pin digital. Se mostró un ejemplo en clase.
+        </p>
+      </article>
+
+      <!-- Listado de materiales -->
+      <article>
+        <h3>Materiales Utilizados</h3>
         <ul>
-          <h3>Materiales Fisicos </h3>
-          <li>4 servomotores para brazos</li>
-          <li>1 motores paso a paso</li>
-          <li>Filamento Tpu flexible </li>
-          <li>Punta de roceador de rosca </li>
-          <li>1 arduino 1 r3 USB</li>
-          <li>cables de adaptacion</li>
-          <li>Manguera de adaptación</li>
+          <li>4 servomotores</li>
+          <li>1 motor paso a paso</li>
+          <li>Filamento TPU flexible</li>
+          <li>Punta de rociador con rosca</li>
+          <li>Placa Arduino UNO R3</li>
+          <li>Cables de conexión</li>
+          <li>Manguera de riego</li>
         </ul>
       </article>
 
       <article>
-        <h3>Material necesario para el proyecto</h3>
+        <h3>Software y Conocimientos Necesarios</h3>
         <ul>
-          <li>Aprender sobre dise;o 3d programas como Tinkercad, Blender etc</li>
-          <li>Lenguaje de programacion python, php para el control de servidores, bases de datos mysql,Javascript para el front end </li>
-          <li>Auto desk para medidas y algunas modificaciones</li>
-          <li>Visual estudio code para las pruebas de codigo</li>
-          <li></li>
+          <li>Diseño 3D: Tinkercad, Blender, Autodesk</li>
+          <li>Programación: Python, PHP, MySQL, JavaScript</li>
+          <li>Editor de código: Visual Studio Code</li>
         </ul>
-
-     
       </article>
 
+      <!-- Avance futuro -->
       <article>
-        <h3>Avance 3 — Próximamente....</h3>
-        <p>En el siguiente avanze sera la finalizacion del proyecto porque estara imprimido ya estaran listas las pruebas de funcionabilidad y diseño dejare los requisitos de desarrollo de el brazo para que sea legible y pueda fabricarse y replicarse con facilidad
-          tambien se dejara de forma gratuita el diseño en paginas para ayuda a la comunidad estudiantil 
+        <h3>Avance 3 — Próximamente...</h3>
+        <p>
+          En la próxima entrega se presentará el brazo impreso y completamente funcional. Se publicará el diseño gratuitamente para que otros estudiantes lo puedan replicar.
         </p>
       </article>
     </section>
 
-    <!-- Columna derecha: slider -->
+    <!-- Slider visual -->
     <section class="slider-section">
-      <!-- Controles del slider -->
       <input type="radio" name="slide" id="slide1" checked>
       <input type="radio" name="slide" id="slide2">
       <input type="radio" name="slide" id="slide3">
@@ -110,24 +109,14 @@
       <input type="radio" name="slide" id="slide5">
 
       <ol class="slides">
-        <li class="slide" data-slide="1">
-          <h2>diseño 3D</h2>
-        </li>
-        <li class="slide" data-slide="2">
-          <h2>Punta de roceador</h2>
-        </li>
-        <li class="slide" data-slide="3">
-          <h2>Ideas del brazo en carton</h2>
-        </li>
-        <li class="slide" data-slide="4">
-          <h2></h2>
-        </li>
-        <li class="slide" data-slide="5">
-          <h2></h2>
-        </li>
+        <li class="slide" style="background-image: url('img/1.png')">Diseño 3D</li>
+        <li class="slide" style="background-image: url('img/2.jpg')">Punta de rociador</li>
+        <li class="slide" style="background-image: url('img/3.jpg')">Prototipo en cartón</li>
+        <li class="slide" style="background-image: url('img/4.jpg')">Circuito</li>
+        <li class="slide">Foto futura</li>
       </ol>
 
-      <!-- Navegación del slider -->
+      <!-- Puntos de navegación -->
       <nav class="tabs">
         <label for="slide1" class="tab">1</label>
         <label for="slide2" class="tab">2</label>
@@ -136,39 +125,29 @@
         <label for="slide5" class="tab">5</label>
       </nav>
 
-      <!-- Flechas de navegación -->
+      <!-- Flechas -->
       <div class="arrows">
-       <div class="arrows">
-  <!-- Slide 1 -->
-  <label for="slide5" class="arrow prev prev-1">‹</label>
-  <label for="slide2" class="arrow next next-1">›</label>
-
-  <!-- Slide 2 -->
-  <label for="slide1" class="arrow prev prev-2">‹</label>
-  <label for="slide3" class="arrow next next-2">›</label>
-
-  <!-- Slide 3 -->
-  <label for="slide2" class="arrow prev prev-3">‹</label>
-  <label for="slide4" class="arrow next next-3">›</label>
-
-  <!-- Slide 4 -->
-  <label for="slide3" class="arrow prev prev-4">‹</label>
-  <label for="slide5" class="arrow next next-4">›</label>
-
-  <!-- Slide 5 -->
-  <label for="slide4" class="arrow prev prev-5">‹</label>
-  <label for="slide1" class="arrow next next-5">›</label>
-</div>
-
+        <label for="slide5" class="arrow prev prev-1">‹</label>
+        <label for="slide2" class="arrow next next-1">›</label>
+        <label for="slide1" class="arrow prev prev-2">‹</label>
+        <label for="slide3" class="arrow next next-2">›</label>
+        <label for="slide2" class="arrow prev prev-3">‹</label>
+        <label for="slide4" class="arrow next next-3">›</label>
+        <label for="slide3" class="arrow prev prev-4">‹</label>
+        <label for="slide5" class="arrow next next-4">›</label>
+        <label for="slide4" class="arrow prev prev-5">‹</label>
+        <label for="slide1" class="arrow next next-5">›</label>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <small>© Avances de Desarrollo Ambiental</small>
+    <small>© 2025 Proyecto STEAM+ · Brazo Robótico</small>
   </footer>
 </body>
 </html>
+
+
 
 
 
